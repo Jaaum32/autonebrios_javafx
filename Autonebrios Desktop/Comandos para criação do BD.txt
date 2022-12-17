@@ -1,0 +1,32 @@
+create database autonebrios;
+
+use autonebrios;
+
+create table caixa(
+id INT auto_increment primary key,
+inicioCriacao VARCHAR(10) not null,
+finalCriacao VARCHAR(10) not null, 
+dieta INT not null,
+funcao TEXT not null
+);
+
+create table dieta(
+id INT auto_increment primary key,
+alimento1 VARCHAR(50) not null,
+quantidade1 DECIMAL not null,
+alimento2 VARCHAR(50),
+quantidade2 DECIMAL,
+alimento3 VARCHAR(50),
+quantidade3 DECIMAL,
+tempoDeTroca INT not null, 
+tempoTotal INT not null, 
+descricao TEXT not null
+);
+
+create table evento(
+id INT auto_increment primary key,
+idCaixa INT not null,
+urgencia VARCHAR(20) not null, 
+dataE VARCHAR(10) not null,
+descricao TEXT not null
+);

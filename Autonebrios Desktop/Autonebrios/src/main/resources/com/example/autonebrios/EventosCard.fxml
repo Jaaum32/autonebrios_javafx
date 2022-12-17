@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="129.0" prefWidth="387.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.autonebrios.EventoCardController">
+   <children>
+      <VBox prefHeight="120.0" prefWidth="387.0">
+         <children>
+            <HBox prefHeight="40.0" prefWidth="387.0" spacing="10.0">
+               <children>
+                  <Text fx:id="id" strokeType="OUTSIDE" strokeWidth="0.0" text="Caixa 1" wrappingWidth="87.73669815063477">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="data" strokeType="OUTSIDE" strokeWidth="0.0" text="00/00/0000" wrappingWidth="168.53669357299805">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+            <HBox prefHeight="53.0" prefWidth="387.0" spacing="10.0">
+               <children>
+                  <VBox prefHeight="31.0" prefWidth="110.0">
+                     <children>
+                        <Text fx:id="urgencia" strokeType="OUTSIDE" strokeWidth="0.0" text="Urgência: " />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#btnExcluirOnclick" text="Completar" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <Text fx:id="descricao" strokeType="OUTSIDE" strokeWidth="0.0" text="Descrição" />
+         </children>
+      </VBox>
+   </children>
+</Pane>
